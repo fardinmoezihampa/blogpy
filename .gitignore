@@ -5,7 +5,14 @@ __pycache__/
 db.sqlite3
 
 # Static files
-.files/
+files/
+
+# Virtual env
+venv/
+blogpy/__pycache__/
+
+# Migrations
+blog/migrations/
 
 
 
