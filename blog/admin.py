@@ -2,20 +2,20 @@ from django.contrib import admin
 from .models import *
 
 
-class AdminUserProfile(admin.ModelAdmin):
-    list_display = ['user']
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ['user','avatar']
 
 
-class AdminCategory(admin.ModelAdmin):
-    list_display = ['title']
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['title','avatar']
 
 
-class AdminArticle(admin.ModelAdmin):
-    list_display = ['title', 'category', 'author']
+class ArticleAdmin(admin.ModelAdmin):
+    list_display = ['title', 'category', 'author','created_at']
     list_filter = ['category', 'author']
-    search_fields = ['category', 'author']
+    search_fields = ['title', 'category', 'author']
 
 
-admin.site.register(UserProFile, AdminUserProfile)
-admin.site.register(Category, AdminCategory)
-admin.site.register(Article, AdminArticle)
+admin.site.register(UserProFile, UserProfileAdmin)
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Article, ArticleAdmin)
