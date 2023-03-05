@@ -1,0 +1,11 @@
+__pycache__/
+.idea/
+
+# DateBase
+db.sqlite3
+
+# Static files
+.files/
+
+
+
