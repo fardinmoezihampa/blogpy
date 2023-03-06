@@ -7,7 +7,7 @@
  *  TOC:
  *  # imports 
  *  # normalize
- *  # basic/base setup styles
+ *  # basic/share setup styles
  *    ## Media
  *    ## Typography resets
  *    ## links
@@ -249,7 +249,7 @@ template {
 
 
 /* ===================================================================
- * # basic/base setup styles
+ * # basic/share setup styles
  *
  * ------------------------------------------------------------------- */
 html {
@@ -891,4 +891,4 @@ textarea {
   text-align: center;
 }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=share.css.map */

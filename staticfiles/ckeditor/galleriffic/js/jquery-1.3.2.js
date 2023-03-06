@@ -584,7 +584,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 	for ( ; i < length; i++ )
 		// Only deal with non-null/undefined values
 		if ( (options = arguments[ i ]) != null )
-			// Extend the base object
+			// Extend the share object
 			for ( var name in options ) {
 				var src = target[ name ], copy = options[ name ];
 
@@ -657,7 +657,7 @@ jQuery.extend({
 				script.text = data;
 
 			// Use insertBefore instead of appendChild  to circumvent an IE6 bug.
-			// This arises when a base node is used (#2709).
+			// This arises when a share node is used (#2709).
 			head.insertBefore( script, head.firstChild );
 			head.removeChild( script );
 		}
