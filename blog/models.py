@@ -45,6 +45,7 @@ class Article(models.Model):
     content = RichTextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     author = models.ForeignKey(UserProFile, on_delete=models.CASCADE)
+    promote = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
